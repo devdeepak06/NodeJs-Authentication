@@ -1,7 +1,7 @@
 {
     "name": "skill_test_for_authentication",
     "version": "1.0.0",
-    "description": "",
+    "description": "This is a skill test for authentication",   
     "main": "index.js",
     "scripts": {
         "start": "nodemon index.js",
