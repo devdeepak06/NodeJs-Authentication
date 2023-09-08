@@ -9,6 +9,8 @@ This is a simple authentication system using NodeJs, Express, Passport, Mongoose
 3. Start the server: `npm start`
 4. Visit the app: `http://localhost:10000`
 
+## Live Demo
+https://nodejs-authentication-sdhz.onrender.com
 ## Author
 Deepak Kumar
 
