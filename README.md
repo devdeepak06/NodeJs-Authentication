@@ -3,6 +3,12 @@
 ## Description
 This is a simple authentication system using NodeJs, Express, Passport, Mongoose, EJS and some other packages.
 
+## Languages and Tools Used
+
+Nodejs, Express, MongoDB, Mongoose, Passport, EJS, HTML, CSS, JavaScript, Bootstrap, Git, GitHub, Onrender, VS Code
+
+
+
 ## Installation
 1. Clone the repository: `git clone https://github.com/devdeepak06/NodeJs-Authentication`
 2. Install the dependencies: `npm install`
