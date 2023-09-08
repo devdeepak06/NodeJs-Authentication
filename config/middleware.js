@@ -1,4 +1,4 @@
-// creat a middleware to set flesh message on res.locals
+// create a middleware to set flesh messages in response locals object.
 module.exports.setflash = function(req, res, next) {
     res.locals.flash = {
         'success': req.flash('success'),

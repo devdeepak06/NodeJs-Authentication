@@ -1,7 +1,8 @@
+// this file is used for authentication using passport js
 const User = require('../models/User');
 const passport = require('passport');
 const LocalStretegy = require("passport-local");
-// authentication using passport 
+// authentication using passport js
 passport.use(new LocalStretegy({
         usernameField: 'email',
         passReqToCallback: true
@@ -27,12 +28,12 @@ passport.use(new LocalStretegy({
 
     }));
 
-// seralizing the user to decide which key is to be kept in cookie
+// seralizing the user to decide which key is to be kept in cookies
 passport.serializeUser(function(user, done) {
     done(null, user.id);
 })
 
-// deserializing the user  from the key in the cookies
+// deserializing the user  from the key in the cookies 
 passport.deserializeUser(async function(id, done) {
     try {
 
@@ -47,7 +48,7 @@ passport.deserializeUser(async function(id, done) {
     }
 })
 
-// check user authenticated
+// check user authenticated or not 
 passport.checkAuthentication = function(req, res, next) {
     // if user is authenticaed then pass request to the next function(conlrollers action)
     if (req.isAuthenticated()) {
@@ -57,7 +58,7 @@ passport.checkAuthentication = function(req, res, next) {
     return res.redirect('/user/login');
 }
 
-// set user for views 
+// set user for views  
 passport.setAuthenticatedUser = function(req, res, next) {
     if (req.isAuthenticated()) {
         // req.user contains the current signIn user from the session cookie and we are just sending

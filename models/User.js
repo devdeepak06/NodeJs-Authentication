@@ -1,4 +1,4 @@
-// Desc: User model is created in models/User.js file. It is used to create a new user in database.
+// User model is created in models/User.js file. It is used to create a new user in database.
 const mongoose = require('mongoose');
 const UserSchema = new mongoose.Schema({
     name: {

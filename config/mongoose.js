@@ -1,3 +1,4 @@
+// Purpose: To connect to the database using mongoose. 
 const mongoose = require("mongoose");
 require("dotenv").config();
 
